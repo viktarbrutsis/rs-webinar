@@ -1,3 +1,5 @@
+import ElementCreator from '../../util/element-creator';
+
 const CssClasses = {
   FOOTER: 'footer',
 };
@@ -7,10 +9,14 @@ export default class FooterView {
   constructor() {}
 
   createView() {
-    const element = document.createElement('footer');
-    element.textContent = TEXT;
-    element.classList.add(CssClasses.FOOTER);
+    const params = {
+      tag: 'footer',
+      className: [CssClasses.FOOTER],
+      textContent: TEXT,
+      callback: null,
+    };
+    const elementCreator = new ElementCreator(params);
 
-    return element;
+    return elementCreator;
   }
 }
