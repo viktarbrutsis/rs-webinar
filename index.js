@@ -10,3 +10,17 @@ window.addEventListener("load", () => {
     const elementsClear = document.querySelectorAll(".button__clear");
     elementsClear.forEach((element) => element.addEventListener("click", clearAllConsoles));
 });
+
+class User {
+    constructor(name, surname) {
+        this.name = name;
+        this.surname = surname
+    }
+    getFullName() {
+        return `My name is ${this.name} and my surname - ${this.surname}`
+    }
+}
+
+const newOne = new User('Viktar', 'Brutsis');
+
+console.log(newOne);
