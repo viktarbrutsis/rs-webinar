@@ -6,7 +6,16 @@ const CssClasses = {
 const TEXT = 'Spa example app';
 
 export default class FooterView {
-  constructor() {}
+  constructor() {
+    this.elementCreator = this.createView();
+  }
+  /**
+   * @returns {HTMLElement}
+   */
+
+  getHtmlElement() {
+    return this.elementCreator.getElement();
+  }
 
   createView() {
     const params = {

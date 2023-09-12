@@ -33,3 +33,19 @@ body {
 
     border: 1px solid;
 }
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 10%;
+    width: 100%;
+    box-sizing: border-box;
+
+    margin: 10px;
+    padding: 10px;
+
+    border: 1px solid;
+ }
